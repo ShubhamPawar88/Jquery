@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="text">
+        inside div
+      <h1 id="hh1">This is h1.....</h1>
+      <h2>This is h2.....</h2>
+      <p id="p1">this is paragraph</p>
+    </div>
+    <ul id="u1" class="abc">
+        <li>Satara</li>
+        <li>Pune</li>
+        <li>Mumbai</li>
+        <li>Sangli</li>
+        <li>NAgour</li>
+    </ul>
+
+    <ul id="u2" class="xyz">
+        <li>Shubham</li>
+        <li>Dipak</li>
+        <li>Prasad</li>
+        <li>Shwetam</li>
+        <li>Shushant</li>
+    </ul>
+    <span class="sp">This is Span</span>
+    <h3>This h3....</h3>
+    <script src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        //applying css on MULTIPLE html element
+        // $('div,ul,span,h3').css("color","green");
+
+         //applying css on All html elements present is Dom
+        //  $('*').css("color","pink");
+
+        // applyaing css All li element
+        //  $('li').css("color","yellow");
+
+        //applyaing css on li of u1 having id u2
+        // $('#u2 li').css("color","blue");
+
+        //applying css on li of all ul
+        // $('#u2 li').css("background-color", "pink");
+
+        //applying css  on  even li of all ul having
+        // $('ul li').css("background-color", "yellow");
+
+          //applying css  on  even li of  ul having id u1
+        //in ul frist it is present on 0th index position  not on frist index
+
+        // $('#u1 li:even').css("background-color", "yellow");
+        //  $('#u1 li:odd').css("background-color", "orange");
+
+        //applying css  on first and last li of ul having id u1
+        // $('#u1 li:first').css("background-color", "orange");
+        // $('#u1 li:last').css("background-color", "aqua");
+
+        //applying css on specific li of ul having index 2..here eq means equation  
+        // $('#u1 li:eq(2)').css("background-color", "orange");  // 2 applyaing
+
+        //applying css on li of ul having index greater than  2..here gt means great
+        $('#u1 li:gt(2)').css("background-color", "orange");  //2 se greter
+
+         //applying css on li of ul having index less than  2..here lt means less than
+        //  $('#u1 li:lt(2)').css("background-color", "orange");  // 2 se small
+
+        //applyaing css on multiple classes
+        //  $('.text,.xyz,.sp').css("color", "tan");     
+         
+
+
+    </script>
+
+</body>
+</html>

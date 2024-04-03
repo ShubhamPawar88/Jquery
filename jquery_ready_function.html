@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="text">
+        inside div
+      <h1>This is h1.....</h1>
+      <h2>This is h2.....</h2>
+      <p>this is paragraph</p>
+    </div>
+    <script src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        //ready() function ensures that when html document will get completely loaded on the browser only then jquery will be apply on that document
+          $(document).ready(function(){
+            let divA=$('#d1').html();
+         console.log(divA);
+          });
+    </script>
+</body>
+</html>

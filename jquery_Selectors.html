@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="text">
+        inside div
+      <h1>This is h1</h1>
+      <p>this is paragraph</p>
+    </div>
+    <script src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        //without jquery
+         //let div1= document.getElementById("d1").innerHTML;
+         //   console.log(div1);
+
+         //with jquery
+         //selectors of jquery
+         //1.id selectors
+        let divA=$('#d1').html();//here, html() function works same like innerHTML property in DOM
+         console.log(divA);
+
+        //2.class selector
+        let divB=$('.text').html();
+        console.log(divB);
+
+         //3.element selector
+         let divC=$('div').html();
+        console.log(divC);
+    </script>
+</body>
+</html>

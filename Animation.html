@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 150px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div  id="d1">This is div</div>
+    <button  id="bt">Click</button>
+    <script  src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#bt').click(function(){
+            $('#d1').fadeOut(2000,function(){
+                document.write("now your element is hiddent")
+            })
+        })
+
+        // let mode =  document.querySelector("#bt");
+        //  let  fade1=0;
+
+        //          mode.addEventListener(  "click" ,function(){
+
+        //               if(fade1==0){
+
+        //                 fade1=1;
+        //                      $("#d1").fadeOut(2000);
+        //               }
+        //               else{
+        //                 fade1=1;
+        //                      $("#d1").fadeIn(2000);
+        //               }
+
+        //          }  );
+    </script>
+</body>
+</html>

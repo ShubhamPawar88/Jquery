@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="text">
+        inside div
+      <h1 id="hh1">This is h1.....</h1>
+      <h2 id="hh2">This is h2.....</h2>
+      <p id="p1">this is paragraph</p>
+    </div>
+    <br><br>
+    <form action=""  id="myForm">
+        enter name : <input type="text"  name="fname" id="fname"><br><br>
+        enter age : <input type="text"  name="fage" id="fage"><br><br>
+         <button>submit</button>
+     </form><br><br>
+    <img class="text2" src="" alt="image is not displayed....">
+    <script  src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        //text() method is used to get text written inside given html element
+        // $('div').click(function(){
+        //     let a = $('#d1').text();
+        //     console.log(a);
+        // })
+
+        //attr() => returns the value of given attribute name of specified element
+    //    let x= $('div').attr('class');
+    //     console.log(x);
+
+        // let y= $('img').attr('alt');
+        // console.log(y);
+
+       $(document).ready(function(){
+        $('form').submit(function(){
+            var x= $('#fname').val()
+            var y= $('#fage').val()
+            document.write("<h1>hello !! your name is "+x+ "  and your age is"+y+"</h1>");
+        })
+       })
+    
+    </script>
+
+</body>
+</html>

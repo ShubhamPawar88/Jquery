@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/Jquery/jquery_events.html" method="get">
+       <br><br>
+     <label>Enter your first name :</label> 
+     <input type="text" placeholder="enter your name" 
+       name="fname" id="f1"  ><br><br>
+         
+     <label>Enter your last name :</label> 
+     <input type="text" name="lname" id="l1"  placeholder="enter your last name "><br><br>
+  
+     <label>Enter your email :</label> 
+     <input type="email" name="eid" id="e1">
+     <br><br>
+     <button>Submit</button>
+    </form>
+    <script src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+      
+      //focus event occurred when we put cursor in the inupt field
+
+      //   $(document).ready(function(){
+      //      $('#f1').focus(function(){
+      //         $(this).css("background-color","gray")
+      //       });
+      //  });
+
+    //blur event occurred when we out cursor from that specific inupt field
+      //  $(document).ready(function(){
+      //       $('#f1,#l1,#e1').blur(function(){
+      //         $(this).css("background-color","green")
+      //       });
+      //  });
+
+
+    // $(document).ready(function(){
+    //         $('#f1').change(function(){
+    //           alert("text changed....");
+    //         });
+    //    });
+
+    $(document).ready(function(){
+            $('form').submit(function(){
+            //   alert("form is submited....");
+            // document.write("form is submited....");
+            $('body').css("background-color","lightgreen")
+            });
+       });
+     </script>
+</body>
+</html>

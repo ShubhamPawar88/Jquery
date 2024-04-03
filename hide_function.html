@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="text">
+        inside div
+      <h1 id="hh1">This is h1.....</h1>
+      <h2 id="hh2">This is h2.....</h2>
+      <p id="p1">this is paragraph1</p>
+      <p id="p2">this is paragraph2</p>
+      <p id="p3">this is paragraph3</p>
+    </div>
+    <button id="bt">Toggel</button>
+    <script  src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('p').click(function(){
+                $(this).hide();
+            })
+        })
+
+        // $(document).ready(function(){
+        //     $('h1').click(function(){
+        //         $(this).hide(2000);
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#bt').click(function(){
+        //         $('#hh1').toggle(2000);
+        //     })
+        // })
+
+
+        // $(document).ready(function(){
+        //     $('h2').click(function(){
+        //         $(this).hide(2000);
+        //     })
+        // })
+    </script>
+</body>
+</html>

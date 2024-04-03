@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="text">
+        inside div
+      <h1 id="hh1">This is h1.....</h1>
+      <h2 id="hh2">This is h2.....</h2>
+      <p id="p1">this is paragraph</p>
+    </div>
+    <script src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        //without jquery
+        // let a=document.getElementById("hh1");
+        // a.onclick=()=>{
+        //     console.log("hii");
+        // }
+        
+
+        //with jquery
+        let a=$('#hh1').click(function(){
+            console.log("bye");
+        });
+
+    //    //changing the color of h2 when double click on h1
+        // $('#hh1').dblclick(function(){
+        //     $('#hh2').css("background-color","maroon")
+        // });
+
+    
+     //changing the text of h2 when double click on it self
+     //here this indicates current element
+    //  $('#hh1').dblclick(function(){
+    //         $(this).text("welcome").css("color","aqua")
+    //     });
+
+
+    //contextmenu means right click  so when we right click on h1..it will change background color of body to aqua
+    // $('#hh1').contextmenu(function(){
+    //         $('body').css("background-color","aqua")
+    //     });
+
+    //changing the color of an elements when mouse is over and out of that element
+    // $('#d1').mouseenter(function(){
+    //     $(this).css("background-color","lightgreen").css("color","white");
+    // })
+
+    // $('#d1').mouseleave(function(){
+    //     $(this).css("background-color","lightgray");
+    // })
+
+    // $('body').keypress(function(){
+    //      $(this).css("background-color","lightgreen");
+    //  })
+
+    // $('body').keydown(function(){
+    //      $(this).css("background-color","lightgreen");
+    //  })
+
+
+    // $('body').keyup(function(){
+    //      $(this).css("background-color","blue");
+    //  })
+
+
+
+
+     
+    </script>
+</body>
+</html>

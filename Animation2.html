@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color: red;">one</h1>
+    <h1 style="background-color: green;">two</h1>
+    <h1 style="background-color: pink;">three</h1>
+    <h1 style="background-color: aqua;">four</h1>
+    <h1 style="background-color: blue;">five</h1>
+    <h1 style="background-color: violet;">six</h1>
+    <h1 style="background-color: olive;">seven</h1>
+
+    <script  src="/Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $('h1').slideUp(5000);
+        // })
+
+        //   $(document).ready(function(){
+        //      $('h1').slideDown(2000);
+        //  })
+         
+        f1();
+
+function f1()
+{
+
+       $(document).ready(function(){
+              $('h1').slideUp(2000,function(){
+      
+         });
+       });
+      f2();
+
+ }  //f1 end
+
+   function f2()
+ {
+  $(document).ready(function(){
+     $('h1').slideDown(2000,function(){
+      
+     });
+})
+ f1();
+ }
+        
+    </script>
+    
+</body>
+</html>
